@@ -55,6 +55,82 @@ amazon_analysis/
 
 ---
 
+## Conclusioni finali
+
+✅ Conclusioni dell’Analisi del Dataset Amazon
+
+Dopo aver esplorato, pulito e analizzato il dataset relativo ai prodotti Amazon, emergono diversi punti chiave:
+
+⸻
+
+1. Qualità dei dati
+	•	Il dataset contiene 1.465 righe e 16 colonne.
+	•	Non sono presenti valori nulli rilevanti, tranne rating_count con 2 celle vuote, facilmente sistemate.
+	•	Molte colonne numeriche erano salvate come stringhe con simboli (“₹”, “%”, virgole), perciò è stato necessario un importante lavoro di cleaning.
+
+⸻
+
+2. Prezzi dei prodotti
+	•	I prezzi originali e scontati mostrano una forte variabilità: ci sono prodotti molto economici e altri con prezzi più alti.
+	•	Dopo il cleaning, la distribuzione dei prezzi mostra una concentrazione di prodotti nella fascia bassa, con pochi prodotti premium.
+
+📊 I grafici delle distribuzioni evidenziano:
+	•	una curva decrescente: pochi prodotti molto costosi
+	•	molti prodotti tra le fasce ₹100 – ₹1.000
+
+⸻
+
+3. Politiche di sconto
+	•	Le percentuali di sconto variano molto, con molti prodotti che hanno sconti tra il 20% e il 60%.
+	•	Alcune categorie presentano differenze significative tra prezzo originale e scontato.
+
+💡 Questo può indicare strategie di marketing aggressive per attirare gli utenti.
+
+⸻
+
+4. Rating e recensioni
+
+Analizzando la distribuzione dei rating emerge che:
+	•	La maggior parte dei prodotti ha una valutazione tra 3.8 e 4.4 stelle
+	•	Il picco maggiore è tra 4.0 e 4.3
+	•	I rating molto bassi (sotto 3) sono rari
+
+📌 Conclusione importante:
+
+Le valutazioni sono mediamente alte, probabilmente perché Amazon tende a promuovere prodotti con recensioni positive o perché gli utenti comprano di più prodotti con rating elevati.
+
+Inoltre:
+	•	I rating_count (numero di recensioni) variano moltissimo: alcuni prodotti hanno pochissime recensioni, altri centinaia.
+
+⸻
+
+5. Analisi per categoria
+
+La media dei prezzi per categoria mostra che:
+	•	alcune categorie hanno prezzi nettamente più alti
+	•	altre sono molto più economiche e densamente popolate
+
+Le Top 10 Categorie per prezzo medio aiutano a capire quali prodotti sono premium.
+
+⸻
+
+🧾 Sintesi Finale
+
+In conclusione:
+
+✔️ Il dataset è ricco e ben strutturato
+✔️ È stato possibile pulirlo eliminando formati errati e trasformando le colonne numeriche
+✔️ Le analisi mostrano:
+	•	forte variabilità nei prezzi
+	•	molte categorie diverse
+	•	rating tendenzialmente positivi
+	•	politiche di sconto significative
+	•	categorie premium con prezzi più alti
+
+L’insieme dei risultati dà una buona panoramica della struttura e delle dinamiche di vendita dei prodotti su Amazon.
+
+
+
 ## Librerie utilizzate
 
 - `pandas` per la manipolazione dei dati  
